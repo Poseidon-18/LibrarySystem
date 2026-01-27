@@ -6,8 +6,8 @@ def LibraryMS():
     connection = mysql.connector.connect(
             host="localhost",
             user="root",
-            password="1001001",
-            database="libraryms"
+            password="ur password",
+            database="ur database"
         )
 if connection.is_connected():
         print("Connected to MySQL database successfully!")
@@ -21,4 +21,5 @@ cur.execute("INSERT INTO mylibrary(bookname,bookauthor) VALUES
     ("Satyarath Nayak"),("Ray Bradbury"))"
 cur.execute("Select * from mylibrary")
 print("books updated!")
+
 database.close()
