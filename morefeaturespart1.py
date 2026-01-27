@@ -4,8 +4,8 @@ def connect_db():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="1001001",
-        database="libraryms"
+        password="ur password",
+        database="ur database"
     )
 
 def add_book():
@@ -55,4 +55,5 @@ def main():
             break
 
 if __name__ == "__main__":
+
      main()
