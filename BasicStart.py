@@ -16,10 +16,11 @@ else:
 cur = database.cursor()
 
 # Use all the SQL you like
-cur.execute("INSERT INTO mylibrary(bookname,bookauthor) VALUES
+cur.execute("INSERT INTO table(bookname,bookauthor) VALUES
     ("Mahagatha"),("Farheniet 415")
     ("Satyarath Nayak"),("Ray Bradbury"))"
-cur.execute("Select * from mylibrary")
+cur.execute("Select * from table")
 print("books updated!")
 
 database.close()
+
