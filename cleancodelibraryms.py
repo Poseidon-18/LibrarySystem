@@ -8,8 +8,8 @@ def LibraryMS():
     connection = mysql.connector.connect(
         host="localhost",
             user="root",
-            password="1001001",
-            database="libraryms"
+            password="ur password",
+            database="ur database"
     )
     
     if connection.is_connected():
@@ -20,14 +20,14 @@ def LibraryMS():
         cur = connection.cursor()
         
 
-        sql = "INSERT INTO mylibrary (bookname, bookauthor,bookid) VALUES (%s, %s,%s)"
+        sql = "INSERT INTO table (bookname, bookauthor,bookid) VALUES (%s, %s,%s)"
         values = (bookname, bookauthor,bookid)
         
         cur.execute(sql, values)
         connection.commit()
         print("Data inserted successfully!")
         print("Books in library now are:")
-        cur.execute("SELECT * FROM mylibrary")
+        cur.execute("SELECT * FROM table")
         booksnow = cur.fetchall()
         print(booksnow)
         cur.close()
