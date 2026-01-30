@@ -4,8 +4,8 @@ def connect_db():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="1001001",
-        database="libraryms"
+        password="ur password",
+        database="ur databse"
     )
 
 def add_book():
@@ -16,7 +16,7 @@ def add_book():
     bookauthor = input("Author: ")
     
     cursor.execute(
-        "INSERT INTO mylibrary (bookname, bookauthor) VALUES (%s, %s)",
+        "INSERT INTO your table (bookname, bookauthor) VALUES (%s, %s)",
         (bookname, bookauthor)
     )
     
@@ -28,7 +28,7 @@ def show_books():
     con = connect_db()
     cursor = con.cursor()
     
-    cursor.execute("SELECT * FROM mylibrary")
+    cursor.execute("SELECT * FROM ur table")
     books = cursor.fetchall()
     
     for book in books:
@@ -68,4 +68,5 @@ def main():
             break
 
 if __name__ == "__main__":
+
      main()
