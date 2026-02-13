@@ -39,15 +39,13 @@ public class featurescode {
         
         System.out.print("Author: ");
         String bookAuthor = scanner.nextLine();
-        
-        // Logic for adding would go here (or just a print for now)
-        System.out.println("Book '" + bookName + "' by " + bookAuthor + " added! (Simulated)");
+        System.out.println("Book '" + bookName + "' by " + bookAuthor + " added! ");
     }
 
     static void show_books() {
-        // This is where you'd loop through your data
-        System.out.println("\n--- Displaying Books ---");
-        System.out.println("Information on the books : 1, 'The Metamorphosis' by Franz Kafka");
-        System.out.println("Information on the books : 2, 'Python Crash Course' by Eric Matthes");
+        
+        System.out.println("\n Displaying Books"); 
+        // not useful as of now, as i am not storing them somewhere
+        
     }
 }
